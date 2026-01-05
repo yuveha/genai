@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stitch Interactive Booking Dashboard</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #0f172a;
+            color: #e2e8f0;
+            margin: 0;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1 {
+            color: #38bdf8;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            width: 100%;
+            max-width: 1200px;
+        }
+
+        .card {
+            background-color: #1e293b;
+            border: 1px solid #334155;
+            border-radius: 0.75rem;
+            padding: 1.5rem;
+            transition: transform 0.2s, box-shadow 0.2s;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            border-color: #38bdf8;
+        }
+
+        .card h2 {
+            margin-top: 0;
+            font-size: 1.25rem;
+            color: #f8fafc;
+        }
+
+        .card p {
+            font-size: 0.875rem;
+            color: #94a3b8;
+            margin-bottom: 0;
+        }
+
+        .tag {
+            display: inline-block;
+            background-color: #0f172a;
+            color: #38bdf8;
+            padding: 0.25rem 0.75rem;
+            border-radius: 9999px;
+            font-size: 0.75rem;
+            margin-bottom: 0.5rem;
+            border: 1px solid #38bdf8;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Stitch Interactive Booking Dashboard</h1>
+    <div class="grid">
+        <a href="driver_onboarding/code.html" class="card">
+            <span class="tag">Onboarding</span>
+            <h2>Driver Onboarding</h2>
+            <p>Registration and document upload flow for new drivers.</p>
+        </a>
+        <a href="hero/landing_page/code.html" class="card">
+            <span class="tag">Landing</span>
+            <h2>Hero Landing Page</h2>
+            <p>Main landing page with value proposition and CTAs.</p>
+        </a>
+        <a href="interactive_booking_dashboard/code.html" class="card">
+            <span class="tag">Dashboard</span>
+            <h2>Booking Dashboard</h2>
+            <p>Main interface for managing active bookings and metrics.</p>
+        </a>
+        <a href="login_/_authentication_flow/code.html" class="card">
+            <span class="tag">Auth</span>
+            <h2>Login & Authentication</h2>
+            <p>Secure login flow for users and administrators.</p>
+        </a>
+        <a href="ola_fleet_/_enterprise_solutions/code.html" class="card">
+            <span class="tag">Enterprise</span>
+            <h2>Ola Fleet / Enterprise</h2>
+            <p>Fleet management tools for enterprise partners.</p>
+        </a>
+        <a href="payment_wallet_management/code.html" class="card">
+            <span class="tag">Finance</span>
+            <h2>Payment & Wallet</h2>
+            <p>Manage payment methods, wallet balance, and transactions.</p>
+        </a>
+        <a href="real-time_ride_tracking/code.html" class="card">
+            <span class="tag">Map</span>
+            <h2>Real-time Ride Tracking</h2>
+            <p>Live tracking interface for active rides.</p>
+        </a>
+        <a href="referral_&_rewards_program/code.html" class="card">
+            <span class="tag">Growth</span>
+            <h2>Referral & Rewards</h2>
+            <p>User referral system and rewards tracking.</p>
+        </a>
+        <a href="support_&_help_center/code.html" class="card">
+            <span class="tag">Support</span>
+            <h2>Support Center</h2>
+            <p>Help articles, FAQs, and support ticket management.</p>
+        </a>
+        <a href="user_profile_&_trip_history/code.html" class="card">
+            <span class="tag">Profile</span>
+            <h2>User Profile & History</h2>
+            <p>Manage personal details and view past trip history.</p>
+        </a>
+    </div>
+</body>
+
+</html>
